@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.clearfix::after,
+.clearfix::before{
+    content: ".";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+body{
+    font-family: "Microsoft YaHei", "sans-serif";
+    background-color: #EBEBEB;
+}
+
+
+.part{
+    min-width: 300px;
+    max-width: 640px;
+    margin:0 auto;
+}
+.hearder{
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #43B181;
+    text-align: center;
+}
+.hearder_box{
+    position: relative;
+}
+.hearder_box a{
+    text-decoration: none;
+    color: #fffdef;
+    font-size: 16px;
+    float: left;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.hearder_box a img{
+    background-size: 50% 50%;
+    width: 12px;
+    vertical-align: middle;
+
+}
+.hearder_box a span:nth-child(1){
+    float: left;
+}
+.hearder_box .spa_s{
+    color: white;
+    font-size: 18px;
+    margin-left: -50px;
+}
+
+.hearder_box ul{
+    position: absolute;
+    right: 10px;
+   bottom: 5px;
+
+}
+.hearder_box li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: right ;
+    list-style: none;
+    margin-left: 5px;
+}
+/*-----------------*/
+.sty ul{
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.sty ul li{
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    list-style: none;
+}
+.sty ul li:nth-child(1){
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sty ul li:nth-child(1) img{
+    width: 100%;
+    background-size: 50% 50%;
+}
+.sty ul li:nth-child(3) img{
+    width: 15px;
+    background-size: 50% 50%;
+    padding-left:8px;
+    padding-right: 3px;
+}
+.sty ul li p{
+    font-size: 12px;
+}
+/*------------*/
+.currt{
+    background-color: white;
+}
+.currt .currt_tp span{
+    font-size: 14px;
+    padding: 15px 13px;
+}
+.currt .currt_tp span:nth-child(1){
+    float: left;
+    color: #999999;
+}
+.currt .currt_tp span:nth-child(2){
+    float: right;
+    color: #E94C37;
+}
+.currt_na{
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+}
+.currt .currt_na .currt_na_box{
+    width: 96%;
+    height: 150px;
+    border: 1px solid #999999;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+.currt_na .currt_na_box p{
+    font-size: 13px;
+    color:#999999 ;
+}
+.currt_na .currt_na_box p:nth-child(1){
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.currt_na .currt_na_box p:nth-child(2){
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.currt_bo{
+    position: relative;
+}
+.currt_bo a{
+    display: block;
+    text-decoration: none;
+    color:#999999 ;
+    font-size: 14px;
+    padding-left: 13px;
+    padding-top: 8px;
+}
+.currt_bo a img{
+    background-size: 50% 50%;
+    width: 20px;
+    padding-right: 10px;
+
+}
+.currt_bo a span{
+    position: absolute;
+    top: 9px;
+}
+.currt_bo p{
+    text-align: center;
+    background-color: #44B181;
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 15px auto;
+    color: white;
+}
+.pro{
+    position: relative;
+    margin: 15px 0;
+}
+.pro .pro_t{
+    margin: 0 10px;
+}
+.pro .pro_t p{
+    font-size: 16px;
+    color:#999999 ;
+}
+.pro .pro_t a{
+   text-decoration: none;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color:#999999 ;
+}
+.pro .pro_t a span:nth-child(2){
+    color: #44B181;
+}
+.pro_b .pro_b_as{
+    padding: 10px ;
+    background-color: white;
+}
+.pro_b .pro_b_eng{
+    background-color: #fff;
+    padding-left: 57px;
+    padding-bottom: 15px;
+    color:#999999 ;
+}
+.pro_b img{
+    background-size: 50% 50%;
+    width: 45px;
+    float: left;
+    padding-right: 5px;
+}
+.pro_b span{
+    color: #35424B;
+    float: left;
+    font-size: 18px;
+}
+.bot {
+    display: flex;
+    flex: 1;
+}
+.bot ul{
+    width: 100%;
+}
+.bot li{
+    text-align: center;
+   list-style: none;
+    float: left;
+    width: 25%;
+
+}
+.bot li:nth-child(2) img{
+    width: 30px;
+}
+.bot li:nth-child(4) img{
+    width: 28px;
+}
+.bot li p{
+    color:#999999 ;
+    font-size: 12px;
+}
+.bot li:nth-child(1) p {
+    margin-top: 5px;
+}
+.bot li:nth-child(2) p{
+    margin-top: 8px;
+}

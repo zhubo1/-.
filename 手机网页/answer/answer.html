@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/answer.css">
+    <script>
+   window.onload = function () {
+    /*�����ֺͱ�ǩ�Ĵ�С������Ļ�ĳߴ����仰 �ȱ�����*/
+    fontsize();
+    /*�����ֺͱ�ǩ�Ĵ�С������Ļ�ĳߴ����仰 �ȱ�����*/
+    window.onresize = function () {
+        fontsize();
+    }
+    function fontsize() {
+        var html = document.getElementsByTagName('html')[0];
+        /*ȡ����Ļ�Ŀ��*/
+        var width = window.innerWidth;
+        /* 640 100  320 50 */
+        var fontSize = 100 / 640 * width;
+        if (fontSize > 101) {
+            fontSize = 100;
+        }
+        /*����fontsize*/
+        html.style.fontSize = fontSize + 'px';
+    }
+}
+
+    </script>
+</head>
+<body>
+    <div class="layout">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="header_box">
+                <a class="back" href="../people-homepage.html">
+                    <i>&lt;</i>
+                    <span>返回</span>
+                </a>
+                <h2>易康回答</h2>
+                <div class="dotted">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- 提问 -->
+        <section class="question">
+            <div class="question_box">
+                <div class="clearfix">
+                    <a class="head_pic fl" href="#">
+                        <img src="./images/headpic.png">
+                    </a>
+                    <a class="fl name" href="#">李响</a>
+                    <span class="fr price">&yen;20</span>
+                </div>
+                <p class="text">如何学习语文的文言文内容,快速提高语文成绩？</p>
+                <p class="deadline">还有5小时就过期</p>
+                <a href="#" class="refuse">拒绝回答</a>
+            </div>
+            <!-- 追问 -->
+            <div class="question_free">
+                <h4>免费追问</h4>
+                <p class="text">不知道你讲什么</p>
+                <p class="time">6分钟前</p>
+            </div>
+        </section>
+        <!-- 回答 -->
+        <section class="answer">
+            <h4>
+                <span>公开</span>
+                提问公开回答，答案每被偷听1次，你就赚￥0.5
+            </h4>
+            <div class="voice">
+                <span>50s</span>
+                <a href="javascript:void(0);" class="recording"></a>
+                <a href="javascript:void(0);" class="rerecording">重录</a>
+            </div>
+            <p>点击开始录间，最多可录制60"</p>
+            <a href="javascript:void(0);" class="submit send">确认发送</a>
+        </section>
+        <!-- 底部工具栏 -->
+        <div class="toolbar">
+            <ul class="clearfix">
+                <li>
+                    <a href="../homepage/index.html">
+                        <i></i>
+                        <p>榜单</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../listener/listener.html">
+                        <i></i>
+                        <p>收听</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../find/index2.html">
+                        <i></i>
+                        <p>发现</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../people-homepage.html">
+                        <i></i>
+                        <p>我的</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 拒绝回答弹出界面 -->
+        <div class="refuse_mask">
+            <!-- 确定不回答这个问题 -->
+            <div class="pop_box no_answer">
+                <p>确定不回答这个问题?</p>
+                <textarea>填写拒绝理由，最多30字，非必填</textarea>
+                <div class="choice clearfix">
+                    <a class="consider" href="javascript:void(0);">我再想想</a>
+                    <a href="javascript:void(0);">确定</a>
+                    <div class="line_sep"></div>
+                </div>
+            </div>
+            <!-- 易康分答温馨提醒 -->
+            <div class="pop_box remind">
+                <p>易康分答温馨提醒</p>
+                <p class="tips">为防手滑误点，请确认录音满意后再发送</p>
+                <div class="choice clearfix">
+                    <a class="consider" href="javascript:void(0);">我再想想</a>
+                    <a href="javascript:void(0);">确定</a>
+                    <div class="line_sep"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/my.js"></script>
+    <script src="js/answer.js"></script>
+</body>
+</html>

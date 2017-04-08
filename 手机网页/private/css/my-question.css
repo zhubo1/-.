@@ -1,0 +1,107 @@
+body{
+    background-color: #e1e1e1;
+}
+.layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+
+}
+.main {
+    margin-top: 1.28rem;
+}
+.main .box{
+    background-color: #fff;
+    height: 3.02rem;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.main .box p{
+    font-size: 0.2rem;
+    font-weight: bold;
+    font-family: "MicroSoft YaHei", "sans-serif";
+}
+.main .box  .name{
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+.main .box  .name span{
+    color: gray;
+    font-size: 0.16rem;
+}
+.main .box .name span:nth-child(1){
+    padding-right: 0.10rem;
+}
+.main .box .name span:nth-child(2){
+    padding-left: 0.10rem;
+}
+.main .box .word{
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+.main .box .word img{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-size: 100% 100%;
+    margin-right: 0.25rem;
+}
+.main .box .icon {
+    font-size: 0.16rem;
+    color: gray;
+}
+.main .box .icon .left{
+    position: relative;
+    padding-left: 0.30rem;
+    color: gray;
+    font-size: 0.20rem;
+}
+.main .box .icon .left::before{
+    display: block;
+    content: "";
+    width: 0.24rem;
+    height: 0.24rem;
+    background-image: url(../images/sprites2.png);
+    background-position: 0 -0.62rem;
+    background-size:2rem 2rem ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main .box .icon .right .ear{
+    position: relative;
+    padding-left: 0.30rem;
+    color: gray;
+    font-size: 0.20rem;
+    margin-right: 0.2rem;
+}
+.main .box .icon .right .ear::before{
+    display: block;
+    content: "";
+    width: 0.24rem;
+    height: 0.24rem;
+    background-image: url(../images/sprites2.png);
+    background-position: 0 -1rem;
+    background-size:2rem 2rem ;
+    position: absolute;
+    top: 0.03rem;
+    left: 0;
+}
+.main .box .icon .right .zan{
+    position: relative;
+    padding-left: 0.30rem;
+    color: gray;
+    font-size: 0.20rem;
+
+}
+.main .box .icon .right .zan::before{
+    display: block;
+    content: "";
+    width: 0.24rem;
+    height: 0.24rem;
+    background-image: url(../images/sprites2.png);
+    background-position:  -0.3rem 0;
+    background-size:2rem 2rem ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

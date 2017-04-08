@@ -1,0 +1,165 @@
+body{
+    background-color: #ccc;
+
+}
+.layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*main*/
+.main{
+    margin-top: 1.28rem;
+    margin-bottom: 1.88rem;
+}
+.main .tit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 0.88rem;
+    font:normal 0.24rem "PingFang SC";
+    position: relative;
+    border-bottom: 0.01rem solid #E1E1E1;
+    background-color: #fff;
+}
+.main .tit a{
+    flex: 1;
+    /*height: 100%;*/
+    text-align: center;
+    line-height: 0.88rem;
+    font-family: "MicroSoft YaHei";
+    font-size: 0.28rem;
+}
+.main .tit .line{
+    width: 0.01rem;
+    height: 0.34rem;
+    background-color: #E1E1E1;
+    position: absolute;
+    left: 50%;
+    top: 0.3rem;
+}
+.active{
+    border-bottom: 0.02rem solid #43B180;
+    color: #43B180;
+}
+section{
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+    font:normal 0.22rem "PingFang SC";
+    padding: 0.1rem 0.1rem;
+
+}
+section .title{
+    position: relative;
+    height: 1rem;
+    margin-bottom: 0.1rem;
+}
+section .circle{
+    width: 1rem;
+    height: 1rem;
+    background-color:#43B180;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .title span{
+    display: block;
+    width: 100%;
+    padding-left: 1.11rem;
+    line-height: 1rem;
+    font-family: "MicroSoft YaHei";
+    font-size: 0.28rem;
+}
+section .title a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #E1E1E1;
+    line-height: 1rem;
+}
+section p{
+    width: 100%;
+    font-family: "MicroSoft YaHei";
+     font-size: 0.28rem;
+}
+section .time{
+    width: 100%;
+    height: 0.25rem;
+    position: relative;
+    padding: 0.15rem 0;
+}
+section .time span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font:normal 0.14rem "PingFang SC";
+    color: #E1E1E1 ;
+}
+section .time span i{
+    display: block;
+    width: 0.24rem;
+    height: 0.24rem;
+    background-image: url(../images/sprites_index.png);
+    background-size:6.6rem 4.4rem ;
+    background-position: -0.45rem -2.23rem;
+    position: absolute;
+    bottom: 0;
+    right: 0.42rem;
+}
+
+section:nth-child(2) a{
+    color: #43B180;
+}
+
+/*底部*/
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.98rem;
+    z-index: 1;
+}
+
+.bottom_box {
+    max-width: 640px;
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-top: 0.01rem solid #e1e1e1;
+    display: flex;
+    background-color: #F6F7F9;
+}
+
+.bottom a {
+    display: block;
+    height: 100%;
+    flex: 1;
+    text-align: center;
+    margin-top: 0.20rem;
+    padding: 0 0.45rem;
+}
+
+.bottom a span {
+    display: block;
+    width: 0.52rem;
+    height: 0.65rem;
+    background: url("../images/bottom.png") no-repeat;
+    background-size: 2rem 2rem;
+}
+.bottom a:nth-child(1) span{
+    background-position: 0 0;
+}
+.bottom a:nth-child(2) span{
+    background-position: 0 -0.78rem;
+}
+.bottom a:nth-child(3) span{
+    background-position: -0.63rem 0;
+}
+.bottom a:nth-child(4) span{
+    background-position: -0.63rem -0.78rem;
+}

@@ -1,0 +1,62 @@
+.tofind {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.findnone {
+    width: 100%;
+    height: 430px;
+    background-color: #EBEBEB;
+}
+
+.findnone div:nth-child(1) {
+    height: 90px;
+    width: 256px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+
+}
+
+.findnone div:nth-child(1) img {
+
+    width: 100%;
+    height: 90px;
+
+}
+
+.findnone div:nth-child(2) {
+    height: 30px;
+    width: 100%;
+text-align: center;
+    margin-top: 30px;
+}
+
+.findnone div:nth-child(2) span{
+
+    font-size: 20px;
+    font-family: "微软雅黑";
+    line-height: 30px;
+
+}
+
+.findnone div:nth-child(3) {
+
+    height: 40px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color :#43B181;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.findnone div:nth-child(3) span{
+
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: "微软雅黑";
+
+}

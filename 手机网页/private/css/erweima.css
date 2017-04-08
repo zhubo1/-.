@@ -1,0 +1,71 @@
+.main {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.content {
+    /*height: 1000px;*/
+    height: 100%;
+    width: 100%;
+    margin-top: 1.28rem;
+    padding: 10% 7%;
+}
+
+.content_box {
+    height: 7.14rem;
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.05rem;
+    position: relative;
+    /*margin: 0 7%;*/
+}
+
+.content_box .erweima {
+    width: 100%;
+    height: 5.56rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    /*padding: 9% 8%;*/
+}
+
+.content_box .erweima img {
+    width: 4.63rem;
+    height: 4.63rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2.31rem 0 0 -2.31rem;
+}
+
+.content_box .message {
+    position: relative;
+}
+
+.content_box .message img {
+    width: 1.13rem;
+    height: 1.12rem;
+    position: absolute;
+    top: 0.34rem;
+    left: 0.34rem;
+}
+
+.content_box .message .introduce {
+    position: absolute;
+    left: 1.48rem;
+    top: 0.36rem;
+}
+
+.content_box .message .name {
+    font-size: 0.29rem;
+    color: #333;
+}
+
+.content_box .message .words {
+    font-size: 0.22rem;
+    color: #999;
+}
+
+

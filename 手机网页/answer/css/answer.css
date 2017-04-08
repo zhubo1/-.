@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/*设置默认编码集*/
+
+
+/* 头部 */
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.header .header_box {
+    position: relative;
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 1.28rem;
+    background: #43B181;
+    line-height: .88rem;
+    text-align: center;
+    overflow: hidden;
+}
+.header .back,
+.header .dotted {
+    position: absolute;
+    top: .4rem;
+}
+
+.header .back {
+    height: .88rem;
+    left: .18rem;
+    color: #EBEBEB;
+}
+.header .back i {
+    font-family: 宋体;
+    font-size: .5rem;
+    font-weight: 600;
+    color: #FFF;
+    vertical-align: middle;
+}
+.header .back span {
+    vertical-align: middle;
+}
+.header h2 {
+    margin-top: .4rem;
+    font-weight: normal;
+    font-size: .36rem;
+    color: #D6D6D6;
+
+}
+
+
+.header .dotted {
+    right: 18px;
+
+}
+.header .dotted i {
+    display: inline-block;
+    width: .12rem;
+    height: .12rem;
+    background: #FFF;
+    border-radius: 50%;
+
+}
+
+
+
+/* 提问 */
+.question {
+   padding-top: 1.28rem;
+
+}
+.question_box {
+    position: relative;
+    height: 2.74rem;
+    overflow: hidden;
+    padding: 0 .18rem;
+}
+
+.question_box .head_pic {
+    display: block;
+    margin-top: 20px;
+    width: .8rem;
+    height: .8rem;
+    background: #58C493;
+    border-radius: 50%;
+    margin-right: .2rem;
+}
+.question_box .head_pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.question_box .name {
+    color: #35414B;
+    margin-top: .46rem;
+}
+.question_box .price {
+    font-size: .24rem;
+    color: #E94B36;
+    margin-top: .48rem;
+}
+
+.question_box .text {
+   font-size: .3rem;
+    color: #333;
+    margin: .18rem 0;
+    line-height: .36rem;
+
+}
+
+.question_box .deadline {
+   font-size: .20rem;
+}
+
+.question_box .refuse {
+    position: absolute;
+    right: 20px;
+    bottom: .3rem;
+    width: 1.52rem;
+    height: .62rem;
+    line-height: .62rem;
+    background: #DFB7B7;
+    border-radius: .1rem;
+    text-align: center;
+    color: #999;
+    font-size: .24rem;
+    border: 2px solid #999;
+}
+
+/* 追问 */
+
+.question_free {
+    border-top: 1px solid #E9E9E9;
+    /* height: 145px; */
+    padding: .18rem;
+
+}
+
+
+.question_free .text {
+    line-height: .28rem;
+    font-size: .28rem;
+    padding: .18rem 0;
+}
+
+.question_free .time {
+    font-size: .18rem;
+    color: #C3C3C3;
+}
+
+
+
+/* 回答 */
+.answer {
+    position: relative;
+    background: #EBEBEB;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    text-align: center;
+    padding: .3rem 0 .2rem 0;
+}
+.answer h4 {
+    line-height: .24rem;
+
+}
+.answer h4 span {
+    color: #43B181;
+    font-size: .24rem;
+}
+
+.answer .voice {
+    position: absolute;
+    top: 1.9rem;
+    width: 100%;
+}
+
+.answer .voice span {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-230%, -50%);
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    color: #E94D37;
+    // display: none;
+
+
+}
+.answer .recording {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #43B181 url(../images/sprite.fw.png) .44rem .28rem no-repeat;
+    background-size: 4rem 4rem;
+     // background: #EBEBEB url(../images/sprite.fw.png) -.7rem .55rem no-repeat;
+    // border: 2px solid #C8C8C8;
+}
+
+.answer .rerecording {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(150%, -50%);
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    border-radius: 50%;
+    background: #C7C7C7;
+    color: #FFF;
+}
+.answer p {
+    color: #35414B;
+    margin-top: 2.45rem;
+}
+
+.answer .submit {
+    display: block;
+    width: 2.2rem;
+    height: 1rem;
+    background: #C7C7C7;
+    border-radius: .1rem;
+    margin: .35rem auto 0 auto;
+    line-height: 1rem;
+
+}
+
+/* 底部工具栏 */
+.toolbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    // height: 98px;
+    background: #F5F7F9;
+}
+
+.toolbar li {
+    float: left;
+    width: 25%;
+}
+.toolbar li a {
+    display: block;
+    padding: .18rem 0;
+}
+
+.toolbar a p {
+    font-size: .22rem;
+    color: #B3B5B5;
+}
+.toolbar li.active p {
+    color: #43B181;
+}
+.toolbar li i {
+    display: inline-block;
+    background-image: url(../images/sprite.fw.png);
+    background-repeat: no-repeat;
+    background-size: 4rem 4rem;
+}
+.toolbar li:nth-child(1) i{
+    width: .32rem;
+    height: .27rem;
+    background-position: 0 -1.25rem;
+}
+.toolbar li:nth-child(2) i{
+    width: .34rem;
+    height: .27rem;
+    background-position: 0 -1.6rem;
+}
+.toolbar li:nth-child(3) i{
+    width: .32rem;
+    height: .32rem;
+    background-position: 0 -2rem;
+}
+.toolbar li:nth-child(4) i{
+    width: .32rem;
+    height: .35rem;
+    background-position: 0 -2.40rem;
+}
+
+/* 拒绝回答弹出界面 */
+
+.refuse_mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 2;
+    display: none;
+}
+
+.pop_box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 450px;
+    width: 70%;
+    // height: 3.4rem;
+    border-radius: .1rem;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: .3rem;
+}
+
+.pop_box textarea {
+    width: 80%;
+    height: 1.36rem;
+    border: 1px solid #C7C7C7;
+    border-radius: .1rem;
+    padding: .2rem;
+    font-size: .18rem;
+    color: #B3B5B5;
+    margin: .25rem 0 .3rem 0;
+}
+
+.pop_box P:first-child {
+    line-height: .28rem;
+    color: #35414B;
+}
+
+.pop_box .choice {
+    border-top: 1px solid #C7C7C7;
+    position: relative;
+}
+.pop_box .choice a {
+    float: left;
+    width: 50%;
+    font-size: .24rem;
+    line-height: .24rem;
+    padding: .3rem 0;
+}
+.pop_box .choice a:nth-child(2) {
+    color: #43B181;
+}
+
+.pop_box .choice .line_sep {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    height: .5rem;
+    margin-top: -.25rem;
+    background: #C7C7C7;
+
+}
+
+.pop_box .no_answer {
+    display: none;
+}
+
+.pop_box .remind {
+    display: none;
+}
+
+.pop_box .tips {
+    font-size: .2rem;
+    padding: .14rem 0;
+    margin-bottom: .25rem;
+}

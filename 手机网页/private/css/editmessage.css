@@ -1,0 +1,140 @@
+
+.main {
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 0.15rem;
+}
+
+/*头像*/
+.pic {
+    margin-top: 1.28rem;
+    width: 100%;
+    height: 1.97rem;
+    background-color: #43B181;
+    text-align: center;
+}
+
+.pic img {
+    width: 1.13rem;
+    height: 1.12rem;
+    margin-top: 0.12rem;
+}
+
+.pic p {
+    color: #fff;
+    font-size: 0.28rem;
+}
+
+/*中间内容区*/
+.nickname,
+.introduce {
+    width: 100%;
+    height: 2.76rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0.2rem;
+    margin-bottom: 0.2rem;
+    position: relative;
+}
+
+.content .title {
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.content .title .name_pic,
+.content .title .introduce_pic {
+    float: left;
+    margin-top: 0.3rem;
+    width: 0.4rem;
+    height: 0.32rem;
+}
+
+.content .title h3 {
+    font-size: 0.28rem;
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+
+.content textarea {
+    padding: 0.1rem 0;
+    font-size: 0.2rem;
+    width: 100%;
+    height: 1.87rem;
+    font-family: "microsoft yahei";
+}
+
+.content p {
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.1rem;
+    color: #999;
+}
+
+/*底部*/
+.foot {
+    height: 1.76rem;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 0.4rem;
+}
+
+.foot .pay,
+.foot .switch {
+    height: 0.88rem;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    line-height: 0.88rem;
+}
+
+.foot p {
+    font-size: 0.28rem;
+}
+
+.foot .firstp {
+    margin-left: 0.2rem;
+}
+
+.foot .pay_right input {
+    float: right;
+    margin-right: 0.18rem;
+    margin-top: 0.2rem;
+    width: 1.25rem;
+    height: 0.48rem;
+    border: 3px solid #44B181;
+    border-radius: 5px;
+    font-size: 0.2rem;
+}
+
+.foot .pay_right p {
+    float: right;
+    margin-right: 0.2rem;
+}
+
+.foot .switch .option {
+    position: relative;
+}
+
+.foot .switch .option .frame {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    width: 0.76rem;
+    height: 0.46rem;
+    background-color: #43B181;
+    border-radius: 30%/50%;
+}
+
+.foot .switch .option .circle {
+    position: absolute;
+    top: 0.22rem;
+    right: 0.2rem;
+    width: 0.43rem;
+    height: 0.42rem;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}

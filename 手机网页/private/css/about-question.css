@@ -1,0 +1,33 @@
+body{
+    background-color: #fff;
+}
+.layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*main*/
+.main{
+    width: 100%;
+    margin-top: 2.28rem;
+}
+.main .box{
+    width: 1.12rem;
+    height: 1.12rem;
+    background-color: #43B180;
+    margin: 1.02rem auto ;
+    border-radius: 0.2rem;
+}
+.link{
+    width: 100%;
+}
+.link a{
+    width: 100%;
+    display: block;
+    border-bottom: 0.01rem solid #ccc;
+    font:normal 0.25rem "MicroSoft YaHei";
+    padding: 0.1rem 0;
+
+}

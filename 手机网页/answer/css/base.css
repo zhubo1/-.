@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*设置默认编码集*/
+
+
+* ,
+::before,
+::after {
+   /*在移动端特殊的设置*/
+    /*清除点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的盒子的宽度以边框开始计算*/
+    -webkit-box-sizing: border-box;
+    /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+    box-sizing: border-box;
+}
+
+body, dl, dt, dd, h1, h2, h3, h4, h5, form,
+img, ol, ul, p, ::before, ::after {margin: 0;}
+
+::before,
+::after{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+a:hover{
+    color: #333;
+}
+ol, ul {
+    padding:0;
+    list-style: none;
+}
+
+img, input, button{
+    border: none;
+    outline: none;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+table {
+    border-collapse: collapse;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    vertical-align: middle;
+    display: block;
+}
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/* publick css */
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;/*IE/7/6*/
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+.mr10{
+    margin-right: .1rem;
+}
+.ml10{
+    margin-left: .1rem;
+}
+.mt20{
+    margin-top: .1rem;
+}
+.mb20{
+    margin-bottom: .1rem;
+}
+
+.pr18 {
+    padding-right: .18rem;
+}
+h4 {
+    font-size: .2rem;
+    color: #999;
+    font-weight: 400;
+}
+
+/*所有使用精灵图的 class  以icon_开始的所有class都有这些属性*/
+// [class^="icon_"]{
+//     background: url("../images/sprites.png") no-repeat;
+//     /*压缩背景图*/
+//     background-size: 200px 200px;
+// }
+
+/* ----------------------------------------------- */
+
+body{
+    font-size: .28rem;
+    color: #333;
+    font-family: "MicroSoft YaHei","sans-serif";/*设备默认的字体*/
+    background: #FFF;
+
+}
+
+.layout {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}

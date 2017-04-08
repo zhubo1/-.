@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html style="font-size: 100px">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>编辑个人信息</title>
+    <link rel="stylesheet" href="css/base1.css"/>
+    <link rel="stylesheet" href="css/editmessage.css"/>
+</head>
+<body>
+<div class="main">
+    <!-- 易康问答标题-->
+    <div class="title_ykqa">
+        <div class="title_box">
+            <!-- 返回首页-->
+            <a href="../people-homepage.html" class="return"><img src="images/return.png" alt="" class="return_pic"/></span>返回</a>
+            <h3>易康问答</h3>
+            <a href="javascript:;">
+                <img src="images/more.png" alt="" class="more_pic"/>
+            </a>
+        </div>
+    </div>
+    <!-- 头像-->
+    <div class="pic">
+        <img src="images/editmessage_pic.png" alt=""/>
+        <p>Michelle</p>
+    </div>
+    <!-- 中间内容区-->
+    <div class="content">
+        <!-- 头衔-->
+        <div class="nickname">
+            <div class="title">
+                <img src="images/name.png" alt=""class="name_pic"/>
+                <h3>我的头衔</h3>
+            </div>
+            <form action="#">
+                <textarea placeholder="请输入您的头衔..." id="txt1"></textarea>
+            </form>
+            <p><span class="num1">0</span>/18</p>
+        </div>
+        <!-- 介绍-->
+        <div class="introduce">
+            <div class="title">
+                <img src="images/introduce.png" alt="" class="introduce_pic"/>
+                <h3>我的介绍</h3>
+            </div>
+            <form action="#">
+                <textarea placeholder="请输入我的个人简介..." id="txt2"></textarea>
+            </form>
+            <p><span class="num2">0</span>/100</p>
+        </div>
+    </div>
+
+    <!-- 底部-->
+    <div class="foot">
+        <div class="pay">
+            <p class="fl firstp">向我提问需要支付</p>
+            <div class="pay_right fr">
+                <p>元</p>
+                <input type="tel"/>
+            </div>
+        </div>
+        <div class="switch">
+            <p class="fl firstp">接受免费的追问</p>
+            <div class="option">
+                <div class="circle"></div>
+                <div class="frame"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/editmessage.js"></script>
+</body>
+</html>

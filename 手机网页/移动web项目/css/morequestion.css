@@ -1,0 +1,128 @@
+.moreques {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+
+}
+
+.search form::after {
+
+    content: '搜索';
+    display: block;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: -60px;
+    top: 0px;
+    background-color: #43B181;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+/*搜索栏结束*/
+
+/*问题开始*/
+.quetions_tit {
+    font-size: 18px;
+    color: grey;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+
+}
+
+.quetions_tit div {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.quetions_cont {
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.quetions_cont ul {
+
+}
+
+.quetions_cont li {
+    height: 60px;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 5px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.quetions_cont li a:first-child {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #43B181;
+    border-radius: 50%;
+    float: left;
+}
+
+.detail {
+
+    width: 600px;
+    height: 20px;
+
+}
+
+.detail span:nth-child(1) {
+font-size: 15px;
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.detail span:nth-child(2) {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: grey;
+    padding-top: 3px;
+
+}
+
+.detail span:nth-child(3) {
+    display:inline-block;
+    width: 80%;
+    width: 500px;
+    height: 19px;
+    overflow: hidden;
+    line-height: 19px;
+   padding-top: 3px;
+    margin-left: 5px;
+    font-family: "黑体";
+    font-size: 15px;
+    color: #999999;
+
+}
+.hear{
+    margin-top: 5px;
+}
+.hear span:nth-child(1){
+    margin-right: 4px;
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+}
+
+.hear span:nth-child(2) {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: grey;
+    padding-top: 3px;
+    line-height: 20px;
+
+}
+.hear span:nth-child(3) {
+    margin-left: 4px;
+    color: #999999;
+    font-size: 14px;
+    padding-top: 10px;
+}
